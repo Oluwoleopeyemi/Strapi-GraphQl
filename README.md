@@ -1,4 +1,4 @@
-# elijah-2
+# Strapi-GraphQl
 
 ## Project setup
 ```
