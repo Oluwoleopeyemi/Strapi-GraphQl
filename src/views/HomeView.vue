@@ -31,13 +31,13 @@
                         >
                           <div class="card-head" style="padding: 4rem">
                             <h1 style="font-size: 6rem">
-                              {{ blog.attributes.title }}
+                               {{ blog.attributes.Title }}
                               <hr />
                             </h1>
                           </div>
                           <div class="card-body text-center">
                             <p style="line-height: 26pt">
-                              {{ blog.attributes.body }}
+                              {{ blog.attributes.Body }}
                             </p>
                           </div>
                         </div>
