@@ -144,27 +144,26 @@ export default {
       }
     };
 
-    // EDIT POST
-    const { mutate: editPost } = useMutation(gql`
-      mutation updateBlog($id: ID!, $title: String!, $body: String!) {
-        updateBlog(id: $id, data: { title: $title, body: $body }) {
-          data {
-            id
-          }
-        }
-      }
-    `);
 
-    const processEdit = (blogId, title, body) => {
-      let check = confirm(`Confirm to edit post? ${blogId}`);
-
-      if (check) {
-        let edited = editPost({ id: Number(blogId), title: title, body: body });
-        if (edited) {
-          alert("Post updated. Refresh!");
-        }
-      }
-    };
+// EDIT POST
+const { mutate: editPost } = useMutation(gql
+mutation updateBlog($id: ID!, $title: String!, $body: String!) {
+updateBlog(id: $id, data: { Title: $title, Body: $body }) {
+data {
+    id
+    }
+  }
+ }
+);
+const processEdit = (blogId, title, body) => {
+let check = confirm(Confirm to edit post? ${blogId});
+ if (check) {
+   let edited = editPost({ id: Number(blogId), title: title, body: body });
+   if (edited) {
+     alert("Post updated. Refresh!");
+   }
+ }
+};
 
     return {
       blogId,
