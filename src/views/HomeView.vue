@@ -65,8 +65,8 @@ const POSTS_QUERY = gql`
       data {
         id
         attributes {
-          title
-          body
+          Title
+          Body
         }
       }
     }
